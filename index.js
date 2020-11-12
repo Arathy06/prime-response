@@ -31,7 +31,7 @@ app.get("/prime",(req,res)=>{
 {
     if(n%i==0)
     {
-        res.send(i)
+        res.status(200).json(i)
     }
 }
 })
