@@ -18,6 +18,11 @@ app.listen(process.env.PORT || 3000,(error)=>{
     }
 })
 
+app.get("/",(req,res)=>{
+
+    res.send("Welcome")
+})
+
 app.get("/prime",(req,res)=>{
 
     var i,n;
